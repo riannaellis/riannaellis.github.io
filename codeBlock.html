@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Code Block</title>
+        <body>
+            <h1>Code Block</h1>
+            <hr>
+            <h3>Below is the code I created for the volume calculator challenge in Python.</h3>
+            <hr>
+            <pre>
+                <code>
+    import math
+
+    def get_shape():
+        print("1. Calculate volume of cone")
+        print("2. Calculate volume of cylinder")
+        print("3. Calculate volume of cube")
+        shape = input("\nChoose 1, 2, or 3: ")
+        return shape
+
+    def calculate_cone_volume():
+        cone_radius = float(input("\nEnter the radius of the cone: "))
+        cone_height = float(input("Enter the height of the cone: "))
+        cone_volume = math.pi * (cone_radius ** 2) * (cone_height/3)
+        return cone_volume
+
+    def calculate_cylinder_volume():
+        cylinder_radius = float(input("\nEnter radius of the cylinder: "))
+        cylinder_height = float(input("Enter the height of the cylinder: "))
+        cylinder_volume = math.pi * (cylinder_radius ** 2) * cylinder_height
+        return cylinder_volume
+
+    def calculate_cube_volume():
+        cube_length = float(input("\nEnter the length of the cube: "))
+        cube_volume = cube_length ** 3
+        return cube_volume
+
+    def main():
+        print("Shape Volume Calculator")
+        print("-----------------------")
+        shape = get_shape()
+        if (shape == "1"):
+            volume = calculate_cone_volume()
+        elif (shape == "2"):
+            volume = calculate_cylinder_volume()
+        elif (shape == "3"):
+            volume = calculate_cube_volume()
+        else:
+            print("Error: Please enter either 1, 2, or 3.")
+            exit()
+        print(f"\nThe volume is {volume:.2f}")
+
+    main()
+                </code>
+            </pre>
+            <hr>
+            <br>
+            <a href="index.html">Click here to return to the homepage.</a>
+        </body>
+    </head>
+</html>

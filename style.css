@@ -1,0 +1,52 @@
+body{
+    background-color:rgb(255, 221, 226);
+}
+
+h1{
+    color: crimson;
+}
+
+h2, .deeppink{
+    color: deeppink;
+}
+
+h3, .violet{
+    color: violet;
+}
+
+.pink{
+   color: pink; 
+}
+
+.brown{
+    color: brown;
+}
+
+.purple{
+    color: purple;
+}
+
+th{
+    border: 5px solid;
+    border-collapse: collapse;
+    color: purple;
+    background-color: lavender;
+    padding: 5px;
+    border-spacing: 0px; 
+}
+
+table, td{
+    border: 5px solid;
+    border-collapse: collapse;
+    color: purple;
+    padding: 5px;
+    border-spacing: 0px;
+}
+
+pre code{
+    background-color: ghostwhite;
+    border: 1px solid;
+    border-color: grey;
+    display: block;
+    padding: 20px;
+}
